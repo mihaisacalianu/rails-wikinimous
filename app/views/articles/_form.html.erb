@@ -1,0 +1,10 @@
+ <div class="mx-auto w-25 p-5">
+<%= form_with model: article do |f| %>
+  <%= f.label :title, class: "form-label" %>
+  <%= f.text_field :title, class: "form-control" %>
+  <%= f.label :content, class: "form-label"  %>
+  <%= f.text_field :content, class: "form-control mb-3" %>
+  <%= f.submit :submit ,class: "btn btn-primary" %>
+  <%= link_to 'home', articles_path(@article),class: "btn btn-primary"%>
+<% end %>
+</div>
